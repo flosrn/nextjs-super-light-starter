@@ -9,16 +9,17 @@ function HomePage() {
     <Layout>
       <main>
         <section>
-          <div className="layout flex min-h-screen flex-col items-center justify-center text-center">
+          <div className="tw-layout tw-flex tw-min-h-screen tw-flex-col tw-items-center tw-justify-center tw-text-center">
             <Vercel className="text-5xl" />
             <h1 className="mt-4 font-bold">
-              <span className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
-                Super light
+              <span className="tw-bg-gradient-to-r tw-from-indigo-500 tw-via-purple-500 tw-to-pink-500 tw-bg-clip-text tw-text-transparent">
+                Demo
               </span>{' '}
-              Next.js + Tailwind CSS + TypeScript{' '}
-              <span className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
-                starter
+              Mangling{' '}
+              <span className="tw-bg-gradient-to-r tw-from-indigo-500 tw-via-purple-500 tw-to-pink-500 tw-bg-clip-text tw-text-transparent">
+                TailwindCSS{' '}
               </span>
+              class
             </h1>
             <p className="text-tw-primary-dark mt-2 text-sm">
               A minimal starter for Next.js, Tailwind CSS, and TypeScript with
@@ -33,7 +34,7 @@ function HomePage() {
               </a>
             </p>
 
-            <footer className="absolute bottom-2">
+            <footer className="tw-absolute tw-bottom-2">
               © {new Date().getFullYear()} By{' '}
               <a
                 href="https://github.com/flosrn"

@@ -4,6 +4,7 @@ const { fontFamily } = require('tailwindcss/defaultTheme');
 /** @type {import("@types/tailwindcss/tailwind-config").TailwindConfig } */
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
+  prefix: 'tw-',
   theme: {
     extend: {
       fontFamily: {

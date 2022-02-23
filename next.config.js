@@ -21,6 +21,18 @@ module.exports = {
       ],
     });
 
+    const MangleCssClassPlugin = require('mangle-css-class-webpack-plugin');
+
+    config.plugins.push(
+      new MangleCssClassPlugin({
+        classNameRegExp:
+          '(([a-zA-Z-:]*)[\\\\\\\\]*:)*([\\\\\\\\]*!)?tw-[a-zA-Z-]([a-zA-Z0-9-]*([\\\\\\\\]*(\\%|\\#|\\.|\\[|\\]))*)*',
+        ignorePrefixRegExp:
+          '((hover|focus|active|disabled|visited|first|last|odd|even|group-hover|focus-within|xs|sm|md||lg|xl)(\\\\\\\\\\\\\\\\|\\\\)?:)*',
+        log: true,
+      })
+    );
+
     return config;
   },
 };
