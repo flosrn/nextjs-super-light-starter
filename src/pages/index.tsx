@@ -21,12 +21,12 @@ function HomePage() {
               </span>
             </h1>
             <p className="text-tw-primary-dark mt-2 text-sm">
-              A starter for Next.js, Tailwind CSS, and TypeScript with Absolute
-              Import, Seo, Link component, pre-configured with Husky{' '}
+              A minimal starter for Next.js, Tailwind CSS, and TypeScript with
+              Absolute Import and pre-configured with Husky{' '}
             </p>
             <p className="text-tw-primary-medium mt-2 text-sm">
               <a
-                href="https://github.com/flosrn/nextjs-ts-starter"
+                href="https://github.com/flosrn/nextjs-super-light-starter"
                 className="block py-1 font-medium font-medium text-indigo-500 hover:underline"
               >
                 See the repository
@@ -36,7 +36,7 @@ function HomePage() {
             <footer className="absolute bottom-2">
               © {new Date().getFullYear()} By{' '}
               <a
-                href="https://flosrn.com?ref=next-ts-starter"
+                href="https://github.com/flosrn"
                 className="font-bold text-indigo-500 hover:underline"
               >
                 Flosrn
