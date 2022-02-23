@@ -1,3 +1,11 @@
+const incstr = require('incstr');
+
+const classNames = {};
+
+const generateClassName = incstr.idGenerator({
+  alphabet: 'abcdefghijklmnopqrstuvwxyz',
+});
+
 /** @type {import('next').NextConfig} */
 module.exports = {
   eslint: {
@@ -30,6 +38,20 @@ module.exports = {
         ignorePrefixRegExp:
           '((hover|focus|active|disabled|visited|first|last|odd|even|group-hover|focus-within|xs|sm|md||lg|xl)(\\\\\\\\\\\\\\\\|\\\\)?:)*',
         log: true,
+        classGenerator: (original, opts, context) => {
+          if (classNames[original]) {
+            return classNames[original];
+          }
+
+          let nextId;
+
+          do {
+            // Class name cannot start with a number.
+            nextId = generateClassName();
+          } while (/^[0-9_-]/.test(nextId));
+
+          return (classNames[original] = nextId);
+        },
       })
     );
 

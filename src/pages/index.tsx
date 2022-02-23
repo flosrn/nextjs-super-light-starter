@@ -10,8 +10,8 @@ function HomePage() {
       <main>
         <section>
           <div className="tw-layout tw-flex tw-min-h-screen tw-flex-col tw-items-center tw-justify-center tw-text-center">
-            <Vercel className="text-5xl" />
-            <h1 className="mt-4 font-bold">
+            <Vercel className="tw-text-5xl" />
+            <h1 className="tw-mt-4 tw-font-bold">
               <span className="tw-bg-gradient-to-r tw-from-indigo-500 tw-via-purple-500 tw-to-pink-500 tw-bg-clip-text tw-text-transparent">
                 Demo
               </span>{' '}
@@ -21,14 +21,14 @@ function HomePage() {
               </span>
               class
             </h1>
-            <p className="text-tw-primary-dark mt-2 text-sm">
+            <p className="text-tw-primary-dark tw-mt-2 tw-text-sm">
               A minimal starter for Next.js, Tailwind CSS, and TypeScript with
               Absolute Import and pre-configured with Husky{' '}
             </p>
-            <p className="text-tw-primary-medium mt-2 text-sm">
+            <p className="text-tw-primary-medium tw-mt-2 tw-text-sm">
               <a
-                href="https://github.com/flosrn/nextjs-super-light-starter"
-                className="block py-1 font-medium font-medium text-indigo-500 hover:underline"
+                href="https://github.com/flosrn/nextjs-super-light-starter/tree/with-mangle-css-class"
+                className="tw-block tw-py-1 tw-font-medium tw-font-medium tw-text-indigo-500 hover:tw-underline"
               >
                 See the repository
               </a>
@@ -38,7 +38,7 @@ function HomePage() {
               © {new Date().getFullYear()} By{' '}
               <a
                 href="https://github.com/flosrn"
-                className="font-bold text-indigo-500 hover:underline"
+                className="tw-font-bold tw-text-indigo-500 hover:tw-underline"
               >
                 Flosrn
               </a>
