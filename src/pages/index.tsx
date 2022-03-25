@@ -21,13 +21,13 @@ function HomePage() {
               </span>
               class
             </h1>
-            <p className="text-tw-primary-dark tw-mt-2 tw-text-sm">
+            <p className="tw-mt-2 tw-text-sm">
               A minimal starter for Next.js, Tailwind CSS, and TypeScript with
               Absolute Import and pre-configured with Husky{' '}
             </p>
-            <p className="text-tw-primary-medium tw-mt-2 tw-text-sm">
+            <p className="tw-mt-2 tw-text-sm">
               <a
-                href="https://github.com/flosrn/nextjs-super-light-starter/tree/with-mangle-css-class"
+                href="https://github.com/flosrn/nextjs-super-light-starter"
                 className="tw-block tw-py-1 tw-font-medium tw-font-medium tw-text-indigo-500 hover:tw-underline"
               >
                 See the repository
